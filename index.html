@@ -1,108 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Applied Information - Public Safety & Infrastructure Performance</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <!-- Lucide Icons CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
+    <!-- Header and Navbar -->
+    <header class="header" id="header">
+        <div class="container-fluid nav-container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="./assets/images/ai-logo-header.png" alt="Applied Information Logo">
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-link active">HOME </a></li>
+                    <li><a href="#" class="nav-link">SOLUTIONS </a></li>
+                    <li><a href="#" class="nav-link">RESOURCES</a></li>
+                    <li><a href="#" class="nav-link">NEWSROOM</a></li>
+                    <li><a href="#" class="nav-link">ABOUT</a></li>
+                    <li><a href="#" class="nav-link">CONTACT</a></li>
+
+                </ul>
+
+                <div class="nav-actions d-flex align-items-center gap-2">
+                    <button class="btn btn-primary">LOGIN TO GLANCE</button>
+                    <button class="btn btn-outline-black">GET A DEMO</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-overlay"></div>
+        
         <div class="container hero-content">
-            <h1 class="hero-title">INFRASTRUCTURE PERFORMANCE WITHOUT RECONSTRUCTION</h1>
-            <p class="hero-subtitle">
-                Proven systems that reduce response time, improve traffic flow, and deliver measurable outcomes—no rip-and-replace required.
-            </p>
-            <div class="hero-buttons">
-                <button class="btn btn-primary">SCHEDULE A CONSULTATION</button>
-                <button class="btn btn-secondary">EXPLORE DIVISIONS</button>
+            <div class="row">
+                <div class="col-xl-7 text-start">
+                    <p class="hero-subtitle">Division-first navigation • Proof-led</p>
+                    <h1 class="hero-title">INFRASTRUCTURE PERFORMANCE WITHOUT RECONSTRUCTION</h1>
+                    <p class="hero-suptitle">
+                        Proven systems that reduce response time, improve traffic flow, and deliver measurable
+                        outcomes—no
+                        rip-and-replace required.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">SCHEDULE A CONSULTATION</button>
+                        <button class="btn btn-outline-black">EXPLORE DIVISIONS</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Focus Area Section -->
     <section class="focus-area">
+        <div class="hero-overlay"></div>
         <div class="container">
-            <h2 class="section-title">WHAT ARE YOU FOCUSED ON?</h2>
-            <p class="section-subtitle">
-                Select your priority to see relevant solutions, case studies, and ROI modeling.
-            </p>
-            
-            <div class="focus-grid">
-                <div class="focus-card">
-                    <div class="focus-icon">
-                        <i data-lucide="siren" class="icon"></i>
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="sticky-wrapper">
+                        <h2 class="section-title text-start fs-1">WHAT ARE YOU <br> FOCUSED ON?</h2>
+                        <p class="section-subtitle text-start">
+                            Select your priority to see relevant solutions, <br> case studies, and ROI modeling.
+                        </p>
                     </div>
-                    <h3 class="focus-card-title">EMERGENCY RESPONSE</h3>
-                    <p class="focus-card-description">Faster dispatch, optimized routes, real-time preemption.</p>
-                    <a href="#" class="focus-link">
-                        <span>VIEW SOLUTIONS</span>
-                        <i data-lucide="arrow-right" class="icon-sm"></i>
-                    </a>
                 </div>
+                <div class="col-xl-8">
+                    <ul class="list-unstyled mb-0 focus-area-list">
+                        <li class="focus-area-list-item" >
+                            <span class="list-count">1</span>
+                            <h3 class="focus-card-title">EMERGENCY RESPONSE</h3>
+                            <p class="focus-card-description">Faster dispatch, optimized routes, real-time preemption.
+                            </p>
+                            <a href="#" class="btn btn-light">
+                                <span>VIEW SOLUTIONS</span>
+                                <i data-lucide="arrow-right" class="icon-sm"></i>
+                            </a>
+                        </li>
 
-                <div class="focus-card">
-                    <div class="focus-icon">
-                        <i data-lucide="traffic-cone" class="icon"></i>
-                    </div>
-                    <h3 class="focus-card-title">TRAFFIC FLOW</h3>
-                    <p class="focus-card-description">Adaptive signals, congestion reduction, multimodal support.</p>
-                    <a href="#" class="focus-link">
-                        <span>VIEW SOLUTIONS</span>
-                        <i data-lucide="arrow-right" class="icon-sm"></i>
-                    </a>
-                </div>
+                        <li class="focus-area-list-item" >
+                            <span class="list-count">2</span>
+                            <h3 class="focus-card-title">TRAFFIC FLOW</h3>
+                            <p class="focus-card-description">Adaptive signals, congestion reduction, multimodal
+                                support.</p>
+                            <a href="#" class="btn btn-light">
+                                <span>VIEW SOLUTIONS</span>
+                                <i data-lucide="arrow-right" class="icon-sm"></i>
+                            </a>
+                        </li>
 
-                <div class="focus-card">
-                    <div class="focus-icon">
-                        <i data-lucide="school" class="icon"></i>
-                    </div>
-                    <h3 class="focus-card-title">SCHOOL SAFETY</h3>
-                    <p class="focus-card-description">Protected crossings, alert systems, safer zones.</p>
-                    <a href="#" class="focus-link">
-                        <span>VIEW SOLUTIONS</span>
-                        <i data-lucide="arrow-right" class="icon-sm"></i>
-                    </a>
-                </div>
+                        <li class="focus-area-list-item" >
+                            <span class="list-count">3</span>
+                            <h3 class="focus-card-title">SCHOOL SAFETY</h3>
+                            <p class="focus-card-description">Protected crossings, alert systems, safer zones.</p>
+                            <a href="#" class="btn btn-light">
+                                <span>VIEW SOLUTIONS</span>
+                                <i data-lucide="arrow-right" class="icon-sm"></i>
+                            </a>
+                        </li>
 
-                <div class="focus-card">
-                    <div class="focus-icon">
-                        <i data-lucide="alert-circle" class="icon"></i>
-                    </div>
-                    <h3 class="focus-card-title">INCIDENT MANAGEMENT</h3>
-                    <p class="focus-card-description">Coordinated response, dynamic messaging, faster clearance.</p>
-                    <a href="#" class="focus-link">
-                        <span>VIEW SOLUTIONS</span>
-                        <i data-lucide="arrow-right" class="icon-sm"></i>
-                    </a>
-                </div>
+                        <li class="focus-area-list-item" >
+                            <span class="list-count">4</span>
+                            <h3 class="focus-card-title">INCIDENT MANAGEMENT</h3>
+                            <p class="focus-card-description">Coordinated response, dynamic messaging, faster clearance.
+                            </p>
+                            <a href="#" class="btn btn-light">
+                                <span>VIEW SOLUTIONS</span>
+                                <i data-lucide="arrow-right" class="icon-sm"></i>
+                            </a>
+                        </li>
 
-                <div class="focus-card">
-                    <div class="focus-icon">
-                        <i data-lucide="shield-check" class="icon"></i>
-                    </div>
-                    <h3 class="focus-card-title">ENFORCEMENT SUPPORT</h3>
-                    <p class="focus-card-description">Speed monitoring, red-light reduction, data-driven compliance.</p>
-                    <a href="#" class="focus-link">
-                        <span>VIEW SOLUTIONS</span>
-                        <i data-lucide="arrow-right" class="icon-sm"></i>
-                    </a>
-                </div>
+                        <li class="focus-area-list-item" >
+                            <span class="list-count">5</span>
+                            <h3 class="focus-card-title">ENFORCEMENT SUPPORT</h3>
+                            <p class="focus-card-description">Speed monitoring, red-light reduction, data-driven
+                                compliance.</p>
+                            <a href="#" class="btn btn-light">
+                                <span>VIEW SOLUTIONS</span>
+                                <i data-lucide="arrow-right" class="icon-sm"></i>
+                            </a>
+                        </li>
 
-                <div class="focus-card">
-                    <div class="focus-icon">
-                        <i data-lucide="dollar-sign" class="icon"></i>
-                    </div>
-                    <h3 class="focus-card-title">FUNDING JUSTIFICATION</h3>
-                    <p class="focus-card-description">Grant-ready metrics, ROI proof, compliance alignment.</p>
-                    <a href="#" class="focus-link">
-                        <span>VIEW SOLUTIONS</span>
-                        <i data-lucide="arrow-right" class="icon-sm"></i>
-                    </a>
+                        <li class="focus-area-list-item" >
+                            <span class="list-count">6</span>
+                            <h3 class="focus-card-title">FUNDING JUSTIFICATION</h3>
+                            <p class="focus-card-description">Grant-ready metrics, ROI proof, compliance alignment.</p>
+                            <a href="#" class="btn btn-light">
+                                <span>VIEW SOLUTIONS</span>
+                                <i data-lucide="arrow-right" class="icon-sm"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -142,7 +179,8 @@
         <div class="container">
             <h2 class="section-title">THE PERFORMANCE LAYER BEHIND MODERN INFRASTRUCTURE</h2>
             <p class="section-subtitle">
-                A unified cloud platform connecting traffic controllers, emergency vehicles, and transit—delivering real-time coordination without replacing your existing hardware.
+                A unified cloud platform connecting traffic controllers, emergency vehicles, and transit—delivering
+                real-time coordination without replacing your existing hardware.
             </p>
 
             <div class="flow-diagram">
@@ -174,7 +212,8 @@
                         <i data-lucide="zap" class="icon-md"></i>
                     </div>
                     <h3 class="feature-title">REAL-TIME COORDINATION</h3>
-                    <p class="feature-description">Signal priority, preemption, and adaptive timing based on live conditions.</p>
+                    <p class="feature-description">Signal priority, preemption, and adaptive timing based on live
+                        conditions.</p>
                 </div>
 
                 <div class="feature-card">
@@ -182,7 +221,8 @@
                         <i data-lucide="database" class="icon-md"></i>
                     </div>
                     <h3 class="feature-title">CENTRALIZED DATA</h3>
-                    <p class="feature-description">All performance metrics in one dashboard for analysis and reporting.</p>
+                    <p class="feature-description">All performance metrics in one dashboard for analysis and reporting.
+                    </p>
                 </div>
 
                 <div class="feature-card">
@@ -190,7 +230,8 @@
                         <i data-lucide="plug" class="icon-md"></i>
                     </div>
                     <h3 class="feature-title">WORKS WITH EXISTING INFRASTRUCTURE</h3>
-                    <p class="feature-description">No rip-and-replace. Integrates with your current controllers and systems.</p>
+                    <p class="feature-description">No rip-and-replace. Integrates with your current controllers and
+                        systems.</p>
                 </div>
 
                 <div class="feature-card">
@@ -198,7 +239,8 @@
                         <i data-lucide="shield" class="icon-md"></i>
                     </div>
                     <h3 class="feature-title">SECURE & COMPLIANT</h3>
-                    <p class="feature-description">Enterprise-grade security with full audit trails and compliance support.</p>
+                    <p class="feature-description">Enterprise-grade security with full audit trails and compliance
+                        support.</p>
                 </div>
             </div>
         </div>
@@ -214,7 +256,8 @@
 
             <div class="case-studies-grid">
                 <div class="case-study-card">
-                    <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800" alt="City of Orlando" class="case-study-image">
+                    <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800" alt="City of Orlando"
+                        class="case-study-image">
                     <div class="case-study-content">
                         <div class="case-study-meta">
                             <span class="case-study-badge">EMERGENCY RESPONSE</span>
@@ -222,7 +265,8 @@
                         </div>
                         <h3 class="case-study-title">CITY OF ORLANDO</h3>
                         <p class="case-study-description">
-                            37% reduction in emergency response time with real-time signal preemption across 800+ intersections.
+                            37% reduction in emergency response time with real-time signal preemption across 800+
+                            intersections.
                         </p>
                         <div class="case-study-stats">
                             <div class="case-study-stat">
@@ -248,7 +292,8 @@
                 </div>
 
                 <div class="case-study-card">
-                    <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800" alt="Seattle DOT" class="case-study-image">
+                    <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800" alt="Seattle DOT"
+                        class="case-study-image">
                     <div class="case-study-content">
                         <div class="case-study-meta">
                             <span class="case-study-badge">TRAFFIC FLOW</span>
@@ -256,7 +301,8 @@
                         </div>
                         <h3 class="case-study-title">SEATTLE DOT</h3>
                         <p class="case-study-description">
-                            25% improvement in corridor travel time using adaptive signal control and real-time traffic monitoring.
+                            25% improvement in corridor travel time using adaptive signal control and real-time traffic
+                            monitoring.
                         </p>
                         <div class="case-study-stats">
                             <div class="case-study-stat">
@@ -282,7 +328,8 @@
                 </div>
 
                 <div class="case-study-card">
-                    <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800" alt="Phoenix Metro" class="case-study-image">
+                    <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800" alt="Phoenix Metro"
+                        class="case-study-image">
                     <div class="case-study-content">
                         <div class="case-study-meta">
                             <span class="case-study-badge">SCHOOL SAFETY</span>
@@ -349,7 +396,8 @@
                 <div class="resources-header-content">
                     <h2 class="section-title">RESOURCES TO SUPPORT EVALUATION</h2>
                     <p class="section-subtitle">
-                        Decision-stage assets should be gated. Technical space can remain open. Organized by division and deployment stage.
+                        Decision-stage assets should be gated. Technical space can remain open. Organized by division
+                        and deployment stage.
                     </p>
                 </div>
                 <button class="btn btn-outline-black">VISIT RESOURCES</button>
@@ -373,7 +421,8 @@
                         <i data-lucide="dollar-sign" class="icon-md"></i>
                     </div>
                     <h3 class="resource-title">FUNDING TOOLKIT</h3>
-                    <p class="resource-description">Grant alignment language and readiness checklist for justification.</p>
+                    <p class="resource-description">Grant alignment language and readiness checklist for justification.
+                    </p>
                     <a href="#" class="resource-link">
                         <span>DOWNLOAD</span>
                         <i data-lucide="arrow-right" class="icon-sm"></i>
@@ -409,7 +458,8 @@
             <div class="two-column-grid">
                 <!-- Glance Cares Card -->
                 <div class="white-card">
-                    <img src="https://images.unsplash.com/photo-1631295161934-ec6c829d282a?w=800" alt="Glance Cares" class="card-image">
+                    <img src="https://images.unsplash.com/photo-1631295161934-ec6c829d282a?w=800" alt="Glance Cares"
+                        class="card-image">
                     <div class="card-content">
                         <div class="card-badge">
                             <span class="badge-dot"></span>
@@ -417,7 +467,8 @@
                         </div>
                         <h3 class="card-title">CONSERVATION THROUGH ACTION</h3>
                         <p class="card-description">
-                            Glance Cares supports conservation efforts—including anti-poaching initiatives and wildlife habitat preservation— so every deployment contributes to something bigger.
+                            Glance Cares supports conservation efforts—including anti-poaching initiatives and wildlife
+                            habitat preservation— so every deployment contributes to something bigger.
                         </p>
                         <div class="card-buttons">
                             <button class="btn btn-primary">EXPLORE GLANCE CARES</button>
@@ -441,7 +492,8 @@
                         </div>
                         <h3 class="card-title">CONNECTIVITY + SUPPORT + WARRANTY—BUILT IN</h3>
                         <p class="card-description">
-                            Keep devices connected to Glance and your plan active, and you get dedicated support plus an industry-standard warranty approach that avoids per-incident "repair fees."
+                            Keep devices connected to Glance and your plan active, and you get dedicated support plus an
+                            industry-standard warranty approach that avoids per-incident "repair fees."
                         </p>
 
                         <div class="feature-box">
@@ -453,7 +505,8 @@
                                 </div>
                             </div>
                             <p class="feature-box-description">
-                                Connectivity + support + warranty–aligned coverage while your system remains connected to Glance.
+                                Connectivity + support + warranty–aligned coverage while your system remains connected
+                                to Glance.
                             </p>
                             <ul class="feature-list">
                                 <li>
@@ -487,7 +540,8 @@
             </div>
 
             <p class="disclaimer">
-                *Wireframe copy. Final plan language should match formal policy/terms and vary by solution line as needed.
+                *Wireframe copy. Final plan language should match formal policy/terms and vary by solution line as
+                needed.
             </p>
         </div>
     </section>
@@ -549,9 +603,18 @@
         </div>
     </footer>
 
+
+    <script src="./assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
         // Initialize Lucide icons
         lucide.createIcons();
+
+        // Initialize AOS (Animate On Scroll)
+        AOS.init();
     </script>
 </body>
+
 </html>
