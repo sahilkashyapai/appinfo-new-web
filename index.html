@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Applied Information - Public Safety & Infrastructure Performance</title>
+    <link rel="shortcut icon" href="./assets/images/ai-fav-icon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/index-2.css">
     <!-- Lucide Icons CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
@@ -40,21 +42,27 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        
+    <section class="hero index-2">
+        <div class="hero-overlay"></div>
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="./assets/videos/hero-banner-video.mp4" type="video/mp4">
+        </video>
+
         <div class="container hero-content">
             <div class="row">
-                <div class="col-xl-7 text-start">
-                    <p class="hero-subtitle">Division-first navigation • Proof-led</p>
-                    <h1 class="hero-title">INFRASTRUCTURE PERFORMANCE WITHOUT RECONSTRUCTION</h1>
+                <div class="col-12 text-center">
+                    <p class="hero-subtitle label">Division-first navigation • Proof-led</p>
+                    <h1 class="hero-title">
+                        Improve Public Safety &
+                        Infrastructure Performance
+                    </h1>
                     <p class="hero-suptitle">
-                        Proven systems that reduce response time, improve traffic flow, and deliver measurable
-                        outcomes—no
-                        rip-and-replace required.
+                        Reduce response time, improve traffic flow, and strengthen funding <br>
+                        justification — without rebuilding infrastructure.
                     </p>
-                    <div class="hero-buttons">
-                        <button class="btn btn-primary">SCHEDULE A CONSULTATION</button>
-                        <button class="btn btn-outline-black">EXPLORE DIVISIONS</button>
+                    <div class="hero-buttons justify-content-center gap-3">
+                        <button class="btn btn-primary">EXPLORE YOUR DIVISION</button>
+                        <button class="btn btn-outline-white">CALCULATE YOUR IMPACT</button>
                     </div>
                 </div>
             </div>
@@ -63,79 +71,85 @@
 
     <!-- Focus Area Section -->
     <section class="focus-area">
-        <div class="hero-overlay"></div>
         <div class="container">
             <div class="row">
                 <div class="col-xl-4">
                     <div class="sticky-wrapper">
                         <h2 class="section-title text-start fs-1">WHAT ARE YOU <br> FOCUSED ON?</h2>
                         <p class="section-subtitle text-start">
-                            Select your priority to see relevant solutions, <br> case studies, and ROI modeling.
+                            Choose the path that matches your agency <br> mission. Each includes proof, funding <br>
+                            alignment, and next steps.
                         </p>
                     </div>
                 </div>
                 <div class="col-xl-8">
                     <ul class="list-unstyled mb-0 focus-area-list">
-                        <li class="focus-area-list-item" >
+                        <li class="focus-area-list-item">
                             <span class="list-count">1</span>
-                            <h3 class="focus-card-title">EMERGENCY RESPONSE</h3>
-                            <p class="focus-card-description">Faster dispatch, optimized routes, real-time preemption.
+                            <h3 class="focus-card-title">Fire & EMS</h3>
+                            <p class="focus-card-description">
+                                Reduce emergency response time and protect responders.
                             </p>
                             <a href="#" class="btn btn-light">
-                                <span>VIEW SOLUTIONS</span>
+                                <span>Learn More</span>
                                 <i data-lucide="arrow-right" class="icon-sm"></i>
                             </a>
                         </li>
 
-                        <li class="focus-area-list-item" >
+                        <li class="focus-area-list-item">
                             <span class="list-count">2</span>
-                            <h3 class="focus-card-title">TRAFFIC FLOW</h3>
-                            <p class="focus-card-description">Adaptive signals, congestion reduction, multimodal
-                                support.</p>
-                            <a href="#" class="btn btn-light">
-                                <span>VIEW SOLUTIONS</span>
-                                <i data-lucide="arrow-right" class="icon-sm"></i>
-                            </a>
-                        </li>
-
-                        <li class="focus-area-list-item" >
-                            <span class="list-count">3</span>
-                            <h3 class="focus-card-title">SCHOOL SAFETY</h3>
-                            <p class="focus-card-description">Protected crossings, alert systems, safer zones.</p>
-                            <a href="#" class="btn btn-light">
-                                <span>VIEW SOLUTIONS</span>
-                                <i data-lucide="arrow-right" class="icon-sm"></i>
-                            </a>
-                        </li>
-
-                        <li class="focus-area-list-item" >
-                            <span class="list-count">4</span>
-                            <h3 class="focus-card-title">INCIDENT MANAGEMENT</h3>
-                            <p class="focus-card-description">Coordinated response, dynamic messaging, faster clearance.
+                            <h3 class="focus-card-title">TRAFFIC</h3>
+                            <p class="focus-card-description">
+                                Improve operations, reduce congestion, and cut maintenance burden.
                             </p>
                             <a href="#" class="btn btn-light">
-                                <span>VIEW SOLUTIONS</span>
+                                <span>Learn More</span>
                                 <i data-lucide="arrow-right" class="icon-sm"></i>
                             </a>
                         </li>
 
-                        <li class="focus-area-list-item" >
+                        <li class="focus-area-list-item">
+                            <span class="list-count">3</span>
+                            <h3 class="focus-card-title">School Zone & Ped Safety</h3>
+                            <p class="focus-card-description">
+                                Protect students and crossings with reliable activation and monitoring.
+                            </p>
+                            <a href="#" class="btn btn-light">
+                                <span>Learn More</span>
+                                <i data-lucide="arrow-right" class="icon-sm"></i>
+                            </a>
+                        </li>
+
+                        <li class="focus-area-list-item">
+                            <span class="list-count">4</span>
+                            <h3 class="focus-card-title">Transit</h3>
+                            <p class="focus-card-description">
+                                Improve on-time performance and rider experience with priority.
+                            </p>
+                            <a href="#" class="btn btn-light">
+                                <span>Learn More</span>
+                                <i data-lucide="arrow-right" class="icon-sm"></i>
+                            </a>
+                        </li>
+
+                        <li class="focus-area-list-item">
                             <span class="list-count">5</span>
-                            <h3 class="focus-card-title">ENFORCEMENT SUPPORT</h3>
-                            <p class="focus-card-description">Speed monitoring, red-light reduction, data-driven
-                                compliance.</p>
+                            <h3 class="focus-card-title">Connected Vehicles</h3>
+                            <p class="focus-card-description">Enable V2X safety applications and infrastructure data
+                                exchange.</p>
                             <a href="#" class="btn btn-light">
-                                <span>VIEW SOLUTIONS</span>
+                                <span>Learn More</span>
                                 <i data-lucide="arrow-right" class="icon-sm"></i>
                             </a>
                         </li>
 
-                        <li class="focus-area-list-item" >
+                        <li class="focus-area-list-item">
                             <span class="list-count">6</span>
-                            <h3 class="focus-card-title">FUNDING JUSTIFICATION</h3>
-                            <p class="focus-card-description">Grant-ready metrics, ROI proof, compliance alignment.</p>
+                            <h3 class="focus-card-title">Remote Communications</h3>
+                            <p class="focus-card-description">Increase remote visibility via resilient communications
+                                and video.</p>
                             <a href="#" class="btn btn-light">
-                                <span>VIEW SOLUTIONS</span>
+                                <span>Learn More</span>
                                 <i data-lucide="arrow-right" class="icon-sm"></i>
                             </a>
                         </li>
@@ -148,27 +162,42 @@
     <!-- Proof at a Glance Section -->
     <section class="proof-section">
         <div class="container">
-            <h2 class="section-title-white">PROOF AT A GLANCE</h2>
-            <p class="section-subtitle-white">
-                Real deployments. Measured outcomes. Agencies that trust performance data.
-            </p>
+            <div class="proof-section-content">
+                <div class="mb-5 text-center">
+                    <h2 class="section-title">PROOF AT A GLANCE</h2>
+                    <p class="section-subtitle">
+                        Immediate credibility. Each tile should link to a Results view filtered by division/state.
+                    </p>
+                </div>
 
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number">15,000+</div>
-                    <div class="stat-label">INTERSECTIONS MANAGED</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">2,500+</div>
-                    <div class="stat-label">AGENCIES SERVED</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">40%</div>
-                    <div class="stat-label">AVG. RESPONSE TIME REDUCTION</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">$2.4M</div>
-                    <div class="stat-label">ANNUAL SAVINGS (TYPICAL CITY)</div>
+                <div class="row stats-grid" id="statsSection">
+                    <div class="col-lg-3">
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="1200" data-suffix="+">0</div>
+                            <div class="stat-label">Agencies Equipped</div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="500" data-suffix="+">0</div>
+                            <div class="stat-label">School Zones Protected</div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="25" data-suffix="%">0</div>
+                            <div class="stat-label">Avg Travel Time Reduction</div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="40" data-suffix="+">0</div>
+                            <div class="stat-label">States with Deployments</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -248,117 +277,127 @@
 
     <!-- Proven Results Section -->
     <section class="proven-results">
+        <div class="element-1">
+            <img src="./assets/images/proven-results-elements.png" alt="">
+        </div>
+        <div class="element-2">
+            <img src="./assets/images/proven-results-elements.png" alt="">
+        </div>
         <div class="container">
-            <h2 class="section-title">PROVEN RESULTS ACROSS THE COUNTRY</h2>
-            <p class="section-subtitle">
-                Real agencies. Real outcomes. Explore case studies filtered by division, region, or challenge.
-            </p>
+            <div class="proven-results-content">
+                <h2 class="section-title">PROVEN RESULTS ACROSS THE COUNTRY</h2>
+                <p class="section-subtitle">
+                    Real agencies. Real outcomes. Explore case studies filtered by division, region, or challenge.
+                </p>
 
-            <div class="case-studies-grid">
-                <div class="case-study-card">
-                    <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800" alt="City of Orlando"
-                        class="case-study-image">
-                    <div class="case-study-content">
-                        <div class="case-study-meta">
-                            <span class="case-study-badge">EMERGENCY RESPONSE</span>
-                            <span class="case-study-location">ORLANDO, FL</span>
-                        </div>
-                        <h3 class="case-study-title">CITY OF ORLANDO</h3>
-                        <p class="case-study-description">
-                            37% reduction in emergency response time with real-time signal preemption across 800+
-                            intersections.
-                        </p>
-                        <div class="case-study-stats">
-                            <div class="case-study-stat">
-                                <i data-lucide="trending-down" class="icon-sm"></i>
-                                <div>
-                                    <div class="stat-value">37%</div>
-                                    <div class="stat-label-sm">FASTER RESPONSE</div>
+                <div class="case-studies-grid">
+                    <div class="case-study-card">
+                        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800"
+                            alt="City of Orlando" class="case-study-image">
+                        <div class="case-study-content">
+                            <div class="case-study-meta">
+                                <span class="case-study-badge">EMERGENCY RESPONSE</span>
+                                <span class="case-study-location">ORLANDO, FL</span>
+                            </div>
+                            <h3 class="case-study-title">CITY OF ORLANDO</h3>
+                            <p class="case-study-description">
+                                37% reduction in emergency response time with real-time signal preemption across 800+
+                                intersections.
+                            </p>
+                            <div class="case-study-stats">
+                                <div class="case-study-stat">
+                                    <i data-lucide="trending-down" class="icon-sm"></i>
+                                    <div>
+                                        <div class="stat-value">37%</div>
+                                        <div class="stat-label-sm">FASTER RESPONSE</div>
+                                    </div>
+                                </div>
+                                <div class="case-study-stat">
+                                    <i data-lucide="map-pin" class="icon-sm"></i>
+                                    <div>
+                                        <div class="stat-value">800+</div>
+                                        <div class="stat-label-sm">INTERSECTIONS</div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="case-study-stat">
-                                <i data-lucide="map-pin" class="icon-sm"></i>
-                                <div>
-                                    <div class="stat-value">800+</div>
-                                    <div class="stat-label-sm">INTERSECTIONS</div>
-                                </div>
-                            </div>
+                            <a href="#" class="case-study-link">
+                                <span>READ FULL CASE STUDY</span>
+                                <i data-lucide="arrow-right" class="icon-sm"></i>
+                            </a>
                         </div>
-                        <a href="#" class="case-study-link">
-                            <span>READ FULL CASE STUDY</span>
-                            <i data-lucide="arrow-right" class="icon-sm"></i>
-                        </a>
                     </div>
-                </div>
 
-                <div class="case-study-card">
-                    <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800" alt="Seattle DOT"
-                        class="case-study-image">
-                    <div class="case-study-content">
-                        <div class="case-study-meta">
-                            <span class="case-study-badge">TRAFFIC FLOW</span>
-                            <span class="case-study-location">SEATTLE, WA</span>
-                        </div>
-                        <h3 class="case-study-title">SEATTLE DOT</h3>
-                        <p class="case-study-description">
-                            25% improvement in corridor travel time using adaptive signal control and real-time traffic
-                            monitoring.
-                        </p>
-                        <div class="case-study-stats">
-                            <div class="case-study-stat">
-                                <i data-lucide="clock" class="icon-sm"></i>
-                                <div>
-                                    <div class="stat-value">25%</div>
-                                    <div class="stat-label-sm">TIME SAVED</div>
+                    <div class="case-study-card">
+                        <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800" alt="Seattle DOT"
+                            class="case-study-image">
+                        <div class="case-study-content">
+                            <div class="case-study-meta">
+                                <span class="case-study-badge">TRAFFIC FLOW</span>
+                                <span class="case-study-location">SEATTLE, WA</span>
+                            </div>
+                            <h3 class="case-study-title">SEATTLE DOT</h3>
+                            <p class="case-study-description">
+                                25% improvement in corridor travel time using adaptive signal control and real-time
+                                traffic
+                                monitoring.
+                            </p>
+                            <div class="case-study-stats">
+                                <div class="case-study-stat">
+                                    <i data-lucide="clock" class="icon-sm"></i>
+                                    <div>
+                                        <div class="stat-value">25%</div>
+                                        <div class="stat-label-sm">TIME SAVED</div>
+                                    </div>
+                                </div>
+                                <div class="case-study-stat">
+                                    <i data-lucide="trending-up" class="icon-sm"></i>
+                                    <div>
+                                        <div class="stat-value">18%</div>
+                                        <div class="stat-label-sm">THROUGHPUT GAIN</div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="case-study-stat">
-                                <i data-lucide="trending-up" class="icon-sm"></i>
-                                <div>
-                                    <div class="stat-value">18%</div>
-                                    <div class="stat-label-sm">THROUGHPUT GAIN</div>
-                                </div>
-                            </div>
+                            <a href="#" class="case-study-link">
+                                <span>READ FULL CASE STUDY</span>
+                                <i data-lucide="arrow-right" class="icon-sm"></i>
+                            </a>
                         </div>
-                        <a href="#" class="case-study-link">
-                            <span>READ FULL CASE STUDY</span>
-                            <i data-lucide="arrow-right" class="icon-sm"></i>
-                        </a>
                     </div>
-                </div>
 
-                <div class="case-study-card">
-                    <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800" alt="Phoenix Metro"
-                        class="case-study-image">
-                    <div class="case-study-content">
-                        <div class="case-study-meta">
-                            <span class="case-study-badge">SCHOOL SAFETY</span>
-                            <span class="case-study-location">PHOENIX, AZ</span>
-                        </div>
-                        <h3 class="case-study-title">PHOENIX METRO</h3>
-                        <p class="case-study-description">
-                            42% reduction in school zone incidents with intelligent crosswalk systems and driver alerts.
-                        </p>
-                        <div class="case-study-stats">
-                            <div class="case-study-stat">
-                                <i data-lucide="shield-check" class="icon-sm"></i>
-                                <div>
-                                    <div class="stat-value">42%</div>
-                                    <div class="stat-label-sm">FEWER INCIDENTS</div>
+                    <div class="case-study-card">
+                        <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800"
+                            alt="Phoenix Metro" class="case-study-image">
+                        <div class="case-study-content">
+                            <div class="case-study-meta">
+                                <span class="case-study-badge">SCHOOL SAFETY</span>
+                                <span class="case-study-location">PHOENIX, AZ</span>
+                            </div>
+                            <h3 class="case-study-title">PHOENIX METRO</h3>
+                            <p class="case-study-description">
+                                42% reduction in school zone incidents with intelligent crosswalk systems and driver
+                                alerts.
+                            </p>
+                            <div class="case-study-stats">
+                                <div class="case-study-stat">
+                                    <i data-lucide="shield-check" class="icon-sm"></i>
+                                    <div>
+                                        <div class="stat-value">42%</div>
+                                        <div class="stat-label-sm">FEWER INCIDENTS</div>
+                                    </div>
+                                </div>
+                                <div class="case-study-stat">
+                                    <i data-lucide="users" class="icon-sm"></i>
+                                    <div>
+                                        <div class="stat-value">15K</div>
+                                        <div class="stat-label-sm">STUDENTS PROTECTED</div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="case-study-stat">
-                                <i data-lucide="users" class="icon-sm"></i>
-                                <div>
-                                    <div class="stat-value">15K</div>
-                                    <div class="stat-label-sm">STUDENTS PROTECTED</div>
-                                </div>
-                            </div>
+                            <a href="#" class="case-study-link">
+                                <span>READ FULL CASE STUDY</span>
+                                <i data-lucide="arrow-right" class="icon-sm"></i>
+                            </a>
                         </div>
-                        <a href="#" class="case-study-link">
-                            <span>READ FULL CASE STUDY</span>
-                            <i data-lucide="arrow-right" class="icon-sm"></i>
-                        </a>
                     </div>
                 </div>
             </div>

@@ -2,9 +2,9 @@
     --color-primary: #269ed5;
     --color-secondary: #1e293b;
     --color-accent: #0f172a;
-    --color-white: white;
-    --color-text: #000;
-    --color-muted: #6b7280;
+    --color-white: #ffffff;
+    --color-text: #000000;
+    --color-muted: #2d2d2d;
     --color-light-muted: #d1d5db;
     --color-dark-muted: #374151;
 }
@@ -46,6 +46,20 @@ body {
     background-color: var(--color-white);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
     color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+
+.btn-white {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--color-white);
+}
+
+.btn-white:hover {
+    background-color: var(--color-primary);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    color: var(--color-white);
     border: 2px solid var(--color-primary);
 }
 
@@ -144,6 +158,14 @@ body {
 }
 
 /* Typography */
+.primary-highlight {
+    color: var(--color-primary);
+}
+
+.black-highlight {
+    color: var(--color-text);
+}
+
 .section-title {
     font-size: 2.5rem;
     font-weight: bold;
@@ -155,7 +177,6 @@ body {
 .section-subtitle {
     font-size: 1.125rem;
     color: var(--color-muted);
-    max-width: 48rem;
 }
 
 .section-title-white {
@@ -169,7 +190,6 @@ body {
 .section-subtitle-white {
     font-size: 1.125rem;
     color: var(--color-light-muted);
-    max-width: 48rem;
 }
 
 /* common classes */
@@ -279,11 +299,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../images/hero-banner-image.png');
-    background-size: contain;
-    background-position: 100% 0;
+    background-image: url('../images/hero-banner-image-3.png');
+    background-size: cover;
+    background-position: 0 -200px;
     background-repeat: no-repeat;
     overflow: hidden;
+}
+
+.hero-element-image {
+    margin-right: -180px;
+    margin-bottom: -80px;
 }
 
 /* .hero-overlay {
@@ -304,19 +329,19 @@ body {
     font-weight: bold;
     margin-bottom: 1.5rem;
     letter-spacing: -0.025em;
-    color: var(--color-text);
+    color: var(--color-white);
 }
 
 .hero-subtitle {
     font-weight: 600;
     font-size: 1.5rem;
-    color: var(--color-text);
+    color: var(--color-white);
 }
 
 .hero-suptitle {
     font-size: 1.25rem;
     margin-bottom: 2rem;
-    color: var(--color-text);
+    color: var(--color-white);
 }
 
 .hero-buttons {
@@ -375,6 +400,11 @@ body {
     margin-bottom: 0;
 }
 
+.focus-area-list-item .btn,
+.focus-area-list-item .focus-card-title {
+    text-transform: uppercase;
+}
+
 .focus-area .list-count {
     position: absolute;
     left: -125px;
@@ -394,31 +424,32 @@ body {
 /* Proof Section */
 .proof-section {
     padding: 5rem 0rem;
-    background: linear-gradient(to bottom right, #1e293b, #0f172a);
+    background-image: url(../images/proof-at-glance-banner.png);
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.proof-section .section-title-white,
-.proof-section .section-subtitle-white {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+/* .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(30, 41, 59, 0.8));
+} */
+
+.proof-section .section-title,
+.proof-section .section-subtitle {
     margin-bottom: 1rem;
-}
-
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
 }
 
 .stat-card {
     text-align: center;
     padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.05);
     border-radius: 0.75rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
+    background: rgba(236, 245, 251, 0.5);
+    border: 1px solid var(--color-white);
+    box-shadow: 30px 30px 100px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
 }
 
 .stat-card:hover {
@@ -438,6 +469,7 @@ body {
     color: var(--color-muted);
     font-weight: 600;
     letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
 
 /* Performance Layer Section */
@@ -550,6 +582,32 @@ body {
 .proven-results {
     padding: 5rem 0rem;
     background-color: #f9fafb;
+    position: relative;
+}
+
+.proven-results-content {
+    position: relative;
+    z-index: 2;
+}
+
+.proven-results .element-1,
+.proven-results .element-2 {
+    position: absolute;
+    z-index: 1;
+}
+
+.proven-results .element-1 {
+    top: 0;
+    left: 0;
+}
+
+.proven-results .element-2 {
+    bottom: 0;
+    right: 0;
+}
+
+.proven-results .element-2 img {
+    transform: rotate(180deg);
 }
 
 .proven-results .section-title,
