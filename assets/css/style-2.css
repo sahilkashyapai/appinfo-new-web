@@ -1,10 +1,10 @@
-.hero.index-2 {
+.hero.hero-video-banner {
     position: relative;
     overflow: hidden;
     background-image: unset;
 }
 
-.index-2 .hero-video {
+.hero-video-banner .hero-video {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -17,14 +17,14 @@
     z-index: -1;
 }
 
-.index-2 .hero-content {
+.hero-video-banner .hero-content {
     position: relative;
     z-index: 2;
 }
 
-.index-2 .hero-title,
-.index-2 .hero-suptitle,
-.index-2 .hero-subtitle {
+.hero-video-banner .hero-title,
+.hero-video-banner .hero-suptitle,
+.hero-video-banner .hero-subtitle {
     color: var(--color-white);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -38,7 +38,7 @@
     color: var(--color-text);
 }
 
-.index-2 .hero-overlay {
+.hero-video-banner .hero-overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(to bottom right, #269ed58b, #269ed55e);
