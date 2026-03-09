@@ -198,6 +198,9 @@ body {
     position: sticky;
 }
 
+.only-md-devices {
+    display: none;
+}
 
 /* Header-Navigation */
 .header {
@@ -299,7 +302,7 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
-    height: calc(100dvh - 100px);
+    height: calc(100dvh - 97px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -387,7 +390,7 @@ body {
     left: -2px;
     top: 0;
     width: 2px;
-    height: calc(100% - 135px);
+    height: 100%;
     background-color: var(--color-primary);
 }
 
@@ -592,6 +595,7 @@ body {
 .performance-layer-card {
     background-color: #2878A363;
     padding: 150px 30px;
+    height: 100%;
 }
 
 .performance-layer-card li {
@@ -649,6 +653,7 @@ body {
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    height: 100%;
 }
 
 .case-study-card:hover {
@@ -718,6 +723,9 @@ body {
 .case-study-stat .icon-sm {
     color: var(--color-primary);
     margin-top: 0.25rem;
+    height: 2rem;
+    width: 2rem;
+    margin-top: 6px;
 }
 
 .stat-value {
@@ -793,6 +801,7 @@ body {
 .resources-section {
     padding: 5rem 0rem;
     background-color: var(--color-white);
+    padding-top: 0;
 }
 
 .resources-header {
@@ -880,7 +889,7 @@ body {
 .more-than-infrastructure {
     position: relative;
     padding: 5rem 0rem;
-    background-image: url('https://images.unsplash.com/photo-1767707707091-95265476178b?w=1600');
+    background-image: url('../images/more-than-infra.png');
     background-size: cover;
     background-position: center;
 }
@@ -888,7 +897,7 @@ body {
 .background-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to bottom right, rgba(15, 23, 42, 0.75), rgba(30, 58, 138, 0.75));
+    background: linear-gradient(to bottom right, #0f172a94, #1e3a8a94);
 }
 
 .more-than-infrastructure .container {
@@ -1093,6 +1102,7 @@ body {
 .footer-cta-subtitle {
     color: #d1d5db;
     font-size: 1rem;
+    margin-bottom: 0;
 }
 
 .footer-cta-buttons {
@@ -1160,6 +1170,10 @@ body {
     html,
     body {
         overflow-x: hidden !important;
+    }
+
+    .navbar-toggler {
+        display: flex;
     }
 
     .header .navbar-toggler {
@@ -1246,9 +1260,61 @@ body {
     .focus-area .sticky-wrapper br {
         display: none;
     }
+
+    .performance-layer {
+        padding: 5rem 0 0 0;
+    }
+
+    .performance-layer-card {
+        padding: 60px 50px;
+    }
+
+    .section-subtitle-white {
+        margin-bottom: 3.5rem;
+    }
+
+    .focus-area-list {
+        margin: 0 auto;
+        width: 40%;
+    }
+
+    .performance-layer .section-title-white,
+    .performance-layer .section-subtitle-white {
+        text-align: center !important;
+    }
+
+    .roi-box .roi-content,
+    .roi-box .roi-buttons,
+    .footer-cta-content div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .roi-box .roi-buttons,
+    .footer-cta-content .footer-cta-buttons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 991px) {
+    .focus-area-list {
+        width: 60%;
+    }
+    .resources-header{
+        gap: 1rem;
+    }
+    .resources-header-content,
+    .resources-header .button-div {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
+    br {
+        display: none;
+    }
+
     .hero-title {
         font-size: 2.5rem;
     }
@@ -1275,10 +1341,41 @@ body {
     }
 }
 
-@media (max-width: 480px) {
-    .hero-title {
-        font-size: 1.875rem;
+@media (max-width: 599px) {
+    .hide-md-devices {
+        display: none !important;
     }
+
+    .only-md-devices {
+        display: flex;
+    }
+
+    .focus-area {
+        padding: 4rem 0.5rem;
+    }
+
+    .focus-area-list {
+        width: 85%;
+        padding-left: 60px;
+    }
+
+    .focus-area-list-item {
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .focus-area .list-count {
+        left: -85px;
+    }
+
+    .proof-section,
+    .performance-layer,
+    .proven-results {
+        padding: 4rem 0rem;
+    }
+}
+
+@media (max-width: 480px) {
 
     .section-title,
     .section-title-white {
@@ -1289,11 +1386,4 @@ body {
         font-size: 2rem;
     }
 
-    .focus-grid,
-    .stats-grid,
-    .features-grid,
-    .case-studies-grid,
-    .resources-grid {
-        grid-template-columns: 1fr;
-    }
 }

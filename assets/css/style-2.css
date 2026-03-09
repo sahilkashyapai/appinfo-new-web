@@ -43,3 +43,18 @@
     inset: 0;
     background: linear-gradient(to bottom right, #269ed58b, #269ed55e);
 }
+
+@media (max-width: 991px) {
+    .hero-subtitle.label {
+        padding: 6px 15px 8px 15px;
+        font-size: 1.3rem;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .hero-subtitle.label {
+        padding: 4px 12px 4px 12px;
+        font-size: 1rem;
+    }
+}
