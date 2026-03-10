@@ -411,9 +411,11 @@ body {
 .hero-carousel-item.connected-vehicles {
     background-image: url('../images/connected-vehicles-hero-bg.png');
 }
+
 .hero-carousel-item.remote-communications {
     background-image: url('../images/remote-communications-hero-bg.png');
 }
+
 .hero-carousel-item .focus-card-title,
 .hero-carousel-item .focus-card-description {
     color: var(--color-white);
