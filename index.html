@@ -20,7 +20,7 @@
         <div class="container-fluid nav-container">
             <nav class="navbar">
                 <div class="logo">
-                    <img src="./assets/images/ai-logo-header.png" alt="Applied Information Logo">
+                    <img src="./assets/images/Glance-powered-by-AI.png" alt="Glance Powered by AI Logo">
                 </div>
 
                 <ul class="nav-links">
@@ -58,16 +58,10 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero hero-video-banner">
-        <div class="hero-overlay"></div>
-        <video class="hero-video" autoplay muted loop playsinline>
-            <source src="./assets/videos/hero-banner-video.mp4" type="video/mp4">
-        </video>
-
-        <div class="container hero-content">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <p class="hero-subtitle label">Division-first navigation • Proof-led</p>
+    <section class="hero">
+        <div class="row gx-0 hero-row">
+            <div class="col-lg-6">
+                <div class="hero-static-content text-center">
                     <h1 class="hero-title">
                         Improve Public Safety &
                         Infrastructure Performance
@@ -78,99 +72,212 @@
                     </p>
                     <div class="hero-buttons justify-content-center gap-3">
                         <button class="btn btn-primary">EXPLORE YOUR DIVISION</button>
-                        <button class="btn btn-outline-white">CALCULATE YOUR IMPACT</button>
+                        <button class="btn btn-outline-primary">CALCULATE YOUR IMPACT</button>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Focus Area Section -->
-    <section class="focus-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-4">
-                    <div class="sticky-wrapper">
-                        <h2 class="section-title text-start fs-1">WHAT ARE YOU <br> FOCUSED ON?</h2>
-                        <p class="section-subtitle text-start">
-                            Choose the path that matches your agency <br> mission. Each includes proof, funding <br>
-                            alignment, and next steps.
-                        </p>
+            <div class="col-lg-6">
+                <div id="carouselExampleIndicators" class="carousel slide hero-carousel-wrapper">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
                     </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="hero-carousel-item fire-ems">
+                                <div class="carousel-item-headings text-center">
+                                    <h3 class="focus-card-title">Fire & EMS</h3>
+                                    <p class="focus-card-description">
+                                        Reduce emergency response time and <br> protect responders.
+                                    </p>
+                                </div>
+
+                                <div class="carousel-item-img-wrapper mb-4">
+                                    <img src="./assets/images/fire-ems-inner-img.png" alt="" class="img-fluid">
+                                </div>
+
+                                <div>
+                                    <a href="#" class="btn btn-light">
+                                        <span>Learn More</span>
+                                        <i data-lucide="arrow-right" class="icon-sm"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TRAFFIC -->
+                        <div class="carousel-item">
+                            <div class="hero-carousel-item traffic">
+                                <div class="carousel-item-headings text-center">
+                                    <h3 class="focus-card-title">TRAFFIC</h3>
+                                    <p class="focus-card-description">
+                                        Improve operations, reduce congestion, and <br>
+                                        cut maintenance burden.
+                                    </p>
+                                </div>
+
+                                <div class="carousel-item-img-wrapper mb-4">
+                                    <img src="./assets/images/traffic-inner-img.png" alt="" class="img-fluid">
+                                </div>
+
+                                <div>
+                                    <a href="#" class="btn btn-light">
+                                        <span>Learn More</span>
+                                        <i data-lucide="arrow-right" class="icon-sm"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SCHOOL ZONE & PED SAFETY -->
+                        <div class="carousel-item">
+                            <div class="hero-carousel-item school-zone">
+                                <div class="carousel-item-headings text-center">
+                                    <h3 class="focus-card-title">SCHOOL ZONE & PED SAFETY</h3>
+                                    <p class="focus-card-description">
+                                        Protect students and crossings with reliable <br>
+                                        activation and monitoring.
+                                    </p>
+                                </div>
+
+                                <div class="carousel-item-img-wrapper mb-4">
+                                    <img src="./assets/images/school-zone-inner-img.png" alt="" class="img-fluid">
+                                </div>
+
+                                <div>
+                                    <a href="#" class="btn btn-light">
+                                        <span>Learn More</span>
+                                        <i data-lucide="arrow-right" class="icon-sm"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TRANSIT -->
+                        <div class="carousel-item">
+                            <div class="hero-carousel-item transit">
+                                <div class="carousel-item-headings text-center">
+                                    <h3 class="focus-card-title">TRANSIT</h3>
+                                    <p class="focus-card-description">
+                                        Improve on-time performance and rider <br>
+                                        experience with priority.
+                                    </p>
+                                </div>
+
+                                <div class="carousel-item-img-wrapper mb-4">
+                                    <img src="./assets/images/transit-inner-img.png" alt="" class="img-fluid">
+                                </div>
+
+                                <div>
+                                    <a href="#" class="btn btn-light">
+                                        <span>Learn More</span>
+                                        <i data-lucide="arrow-right" class="icon-sm"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONNECTED VEHICLES -->
+                        <div class="carousel-item">
+                            <div class="hero-carousel-item connected-vehicles">
+                                <div class="carousel-item-headings text-center">
+                                    <h3 class="focus-card-title">CONNECTED VEHICLES</h3>
+                                    <p class="focus-card-description">
+                                        Enable V2X safety applications and
+                                        infrastructure <br> data exchange.
+                                    </p>
+                                </div>
+
+                                <div class="carousel-item-img-wrapper mb-4">
+                                    <img src="./assets/images/connected-vehicles-inner-img.png" alt=""
+                                        class="img-fluid">
+                                </div>
+
+                                <div>
+                                    <a href="#" class="btn btn-light">
+                                        <span>Learn More</span>
+                                        <i data-lucide="arrow-right" class="icon-sm"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- REMOTE COMMUNICATIONS -->
+                        <div class="carousel-item">
+                            <div class="hero-carousel-item remote-communications">
+                                <div class="carousel-item-headings text-center">
+                                    <h3 class="focus-card-title">REMOTE COMMUNICATIONS</h3>
+                                    <p class="focus-card-description">
+                                        Increase remote visibility via resilient <br /> communications and video.
+                                    </p>
+                                </div>
+
+                                <div class="carousel-item-img-wrapper mb-4">
+                                    <img src="./assets/images/remote-communications-inner-img.png" alt=""
+                                        class="img-fluid">
+                                </div>
+
+                                <div>
+                                    <a href="#" class="btn btn-light">
+                                        <span>Learn More</span>
+                                        <i data-lucide="arrow-right" class="icon-sm"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true">
+                            <i data-lucide="chevron-left" class="icon-md"></i>
+                        </span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true">
+                            <i data-lucide="chevron-right" class="icon-md"></i>
+                        </span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <div class="col-xl-8">
-                    <ul class="list-unstyled mb-0 focus-area-list">
-                        <li class="focus-area-list-item">
-                            <span class="list-count">1</span>
+
+
+                <!-- <div class="hero-carousel-wrapper">
+                    <div class="hero-carousel-item fire-ems">
+                        <div class="carousel-item-headings text-center">
                             <h3 class="focus-card-title">Fire & EMS</h3>
                             <p class="focus-card-description">
-                                Reduce emergency response time and protect responders.
+                                Reduce emergency response time and <br> protect responders.
                             </p>
-                            <a href="#" class="btn btn-light">
-                                <span>Learn More</span>
-                                <i data-lucide="arrow-right" class="icon-sm"></i>
-                            </a>
-                        </li>
+                        </div>
 
-                        <li class="focus-area-list-item">
-                            <span class="list-count">2</span>
-                            <h3 class="focus-card-title">TRAFFIC</h3>
-                            <p class="focus-card-description">
-                                Improve operations, reduce congestion, and cut maintenance burden.
-                            </p>
-                            <a href="#" class="btn btn-light">
-                                <span>Learn More</span>
-                                <i data-lucide="arrow-right" class="icon-sm"></i>
-                            </a>
-                        </li>
+                        <div class="carousel-item-img-wrapper mb-4">
+                            <img src="./assets/images/fire-ems-inner-img.png" alt="" class="img-fluid">
+                        </div>
 
-                        <li class="focus-area-list-item">
-                            <span class="list-count">3</span>
-                            <h3 class="focus-card-title">School Zone & Ped Safety</h3>
-                            <p class="focus-card-description">
-                                Protect students and crossings with reliable activation and monitoring.
-                            </p>
+                        <div>
                             <a href="#" class="btn btn-light">
                                 <span>Learn More</span>
                                 <i data-lucide="arrow-right" class="icon-sm"></i>
                             </a>
-                        </li>
+                        </div>
+                    </div>
 
-                        <li class="focus-area-list-item">
-                            <span class="list-count">4</span>
-                            <h3 class="focus-card-title">Transit</h3>
-                            <p class="focus-card-description">
-                                Improve on-time performance and rider experience with priority.
-                            </p>
-                            <a href="#" class="btn btn-light">
-                                <span>Learn More</span>
-                                <i data-lucide="arrow-right" class="icon-sm"></i>
-                            </a>
-                        </li>
-
-                        <li class="focus-area-list-item">
-                            <span class="list-count">5</span>
-                            <h3 class="focus-card-title">Connected Vehicles</h3>
-                            <p class="focus-card-description">Enable V2X safety applications and infrastructure data
-                                exchange.</p>
-                            <a href="#" class="btn btn-light">
-                                <span>Learn More</span>
-                                <i data-lucide="arrow-right" class="icon-sm"></i>
-                            </a>
-                        </li>
-
-                        <li class="focus-area-list-item">
-                            <span class="list-count">6</span>
-                            <h3 class="focus-card-title">Remote Communications</h3>
-                            <p class="focus-card-description">Increase remote visibility via resilient communications
-                                and video.</p>
-                            <a href="#" class="btn btn-light">
-                                <span>Learn More</span>
-                                <i data-lucide="arrow-right" class="icon-sm"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>

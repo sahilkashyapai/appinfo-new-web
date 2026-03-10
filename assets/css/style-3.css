@@ -1,10 +1,19 @@
-.hero.hero-video-banner {
+.hero-title,
+.hero-subtitle,
+.hero-suptitle {
+    color: var(--color-white);
+}
+
+.hero.index-3 {
     position: relative;
     overflow: hidden;
     background-image: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.hero-video-banner .hero-video {
+.index-3 .hero-video {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -17,14 +26,14 @@
     z-index: -1;
 }
 
-.hero-video-banner .hero-content {
+.index-3 .hero-content {
     position: relative;
     z-index: 2;
 }
 
-.hero-video-banner .hero-title,
-.hero-video-banner .hero-suptitle,
-.hero-video-banner .hero-subtitle {
+.index-3 .hero-title,
+.index-3 .hero-suptitle,
+.index-3 .hero-subtitle {
     color: var(--color-white);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -38,7 +47,7 @@
     color: var(--color-text);
 }
 
-.hero-video-banner .hero-overlay {
+.index-3 .hero-overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(to bottom right, #269ed58b, #269ed55e);
