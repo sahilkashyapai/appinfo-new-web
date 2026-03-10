@@ -388,6 +388,10 @@ body {
 
 .carousel-item-img-wrapper {
     text-align: center;
+    max-height: 40dvh;
+}
+.carousel-item-img-wrapper img{
+    max-height: 100%;
 }
 
 .hero-carousel-item.fire-ems {
