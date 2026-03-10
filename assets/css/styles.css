@@ -1360,6 +1360,10 @@ body {
         margin-top: 75px;
     }
 
+    .hero-carousel-item>div:last-of-type {
+        margin-left: -120px;
+    }
+
     .focus-area-list {
         padding-left: 80px;
         margin-left: 90px;
