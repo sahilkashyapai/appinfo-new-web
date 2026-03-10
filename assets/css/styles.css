@@ -339,6 +339,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 3rem;
 }
 
 .hero-content {
@@ -390,7 +391,8 @@ body {
     text-align: center;
     max-height: 40dvh;
 }
-.carousel-item-img-wrapper img{
+
+.carousel-item-img-wrapper img {
     max-height: 100%;
 }
 
@@ -1369,6 +1371,20 @@ body {
 }
 
 @media (max-width: 1199px) {
+    .hero {
+        height: unset;
+    }
+
+    .hero-static-content,
+    .hero-carousel-wrapper {
+        min-height: calc(100dvh - 75px);
+    }
+
+    .hero-carousel-item.school-zone {
+        background-image: url('../images/school-zone-hero-bg.png');
+        background-position: center center;
+    }
+
     .focus-area .sticky-wrapper {
         position: static;
         padding: 0;
