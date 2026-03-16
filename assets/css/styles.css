@@ -379,7 +379,7 @@ body {
 .hero-carousel-item {
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 4rem 3rem 29px 3rem;
+    padding: 4rem 3rem 27px 3rem;
     display: flex;
     gap: 1rem;
     flex-direction: column;
@@ -688,8 +688,8 @@ body {
 }
 
 .feature-icon-wrapper {
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     background-color: var(--color-white);
     border-radius: 50%;
     display: flex;
@@ -721,7 +721,7 @@ body {
 
 .performance-layer-card {
     background-color: #2878A363;
-    padding: 150px 30px;
+    padding: 100px 30px;
     height: 100%;
 }
 
@@ -1495,6 +1495,22 @@ body {
 
     .only-md-devices {
         display: flex;
+    }
+
+    .hero-carousel-item>div:last-of-type {
+        margin-left: -250px;
+    }
+
+    .carousel-control-next {
+        right: 15px;
+    }
+
+    .carousel-indicators {
+        right: 60px;
+    }
+
+    .carousel-control-prev {
+        right: 195px;
     }
 
     .focus-area {
